@@ -48,7 +48,7 @@ with st.sidebar:
     # choose the mode for detection
     mode = st.radio("Choose Face Detection Mode", ('Image Upload',
                                                    'Webcam Image Capture',
-                                                   'Webcam Realtime'), index=0)
+                                                   'Webcam Mask Realtime'), index=0)
     if mode == 'Image Upload':
         detection_mode = mode
     elif mode == 'Video Upload':
