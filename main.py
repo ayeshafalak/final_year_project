@@ -55,7 +55,7 @@ with st.sidebar:
         detection_mode = mode
     elif mode == "Webcam Image Capture":
         detection_mode = mode
-    elif mode == 'Webcam Realtime':
+    elif mode == 'Webcam Mask Realtime':
         detection_mode = mode
 
     # slider for choosing parameter values
@@ -248,7 +248,7 @@ if detection_mode == "Webcam Image Capture":
 # -------------Webcam Realtime Section------------------------------------------------
 
 
-if detection_mode == "Webcam Realtime":
+if detection_mode == "Webcam Mask Realtime":
 
     # load face detection model
     cascade1 = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
