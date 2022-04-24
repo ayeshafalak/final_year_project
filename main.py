@@ -45,7 +45,7 @@ with st.sidebar:
     st.markdown(title, unsafe_allow_html=True)
 
     # choose the mode for detection
-     mode = st.radio("Choose Face Detection Mode", ('Image Upload',
+    mode = st.radio("Choose Face Detection Mode", ('Image Upload',
                                                    'Webcam Image Capture',
                                                    'Webcam Mask Realtime'), index=0)
     if mode == 'Image Upload':
